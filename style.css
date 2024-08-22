@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  width: 290px;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.img-container {
+  width: 250px;
+  height: 250px;
+  background-image: url(images/image-equilibrium.jpg);
+  background-size: cover;
+  border-radius: 12px;
+  margin: 20px auto;
+  cursor: pointer;
+  animation: 0.7 infinite;
+}
+
+.img-container:hover {
+  scale: 1.05;
+  transition: all ease-in-out 0.6s;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  margin-left: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  max-width: fit-content;
+}
+
+.about {
+  display: flex;
+  color: hsl(215, 51%, 70%);
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0px 20px 0px 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13.5px;
+}
+
+.about-ethereum {
+  color: hsl(178, 100%, 50%);
+  margin-right: 85px;
+  gap: 10px;
+}
+
+.about-clock {
+  color: hsl(215, 51%, 70%);
+}
+
+.image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  border: 2px solid white;
+  margin-right: 15px;
+}
+
+hr {
+  display: flex;
+  border-color: hsl(215, 32%, 27%);
+  width: 85%;
+  margin-left: 20px;
+  border-style: groove;
+  opacity: 50%;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  padding: 10px;
+  color: hsl(215, 51%, 70%);
+  font-size: 14px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: hsl(178, 100%, 50%);
+  transition: all ease 0.7s;
+  scale: 1.1;
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.5s;
+  scale: 1.1;
+}
